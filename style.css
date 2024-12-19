@@ -1,0 +1,289 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --fs-1: 16px;
+
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+    --Dusky-Blue: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--fs-1);
+    background-color: var(--Stone-100);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--Stone-900);
+    line-height: 1;
+}
+
+h2 {
+    color: var(--Brown-800);
+}
+
+h1 {
+    font-family: 'Young Serif', sans-serif;
+}
+
+p {
+    font-size: 1.125rem !important;
+    color: var(--Stone-600) !important;
+    line-height: 1.5;
+}
+
+span {
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.space {
+    width: 85%;
+}
+
+.p-dark {
+    color: var(--Brown-800);
+}
+
+.divider {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border: 1.5px solid var(--Stone-150);
+}
+
+.divider-two {
+    width: 100%;
+    margin: 0 auto;
+    border: 1.5px solid var(--Stone-150);
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    line-space: 2;
+    background-color: var(--White);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 1rem;
+}
+
+.container-two {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.intro-img {
+    padding: 2.5rem 2.5rem 1rem 2.5rem;
+    border-radius: 2rem;
+}
+
+.section-title {
+    color: var(--Rose-800);
+}
+
+.section-one .container-two {
+    background-color: var(--Rose-50);
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+}
+
+.article-one-title {
+    font-size: 1.875rem;
+    font-family: 'Young Serif', sans-serif;
+}
+
+.section-one-list li::marker {
+    color: var(--Rose-800);
+}
+
+.section-one-list li {
+    margin-left: -15px;
+}
+
+.section-one-list li p {
+    padding-left: 25px;
+}
+
+.article-one ul li {
+    color: var(--Brown-800);
+    margin-left: -18px;
+}
+
+.article-one-list li p {
+    padding-left: 25px;
+}
+
+.article-two-title {
+    font-size: 1.875rem;
+    font-family: 'Young Serif', sans-serif;
+}
+
+.article-two-list li {
+    margin-left: -12px;
+}
+
+.article-two-list li::marker {
+    font-size: 1.125rem;
+    font-weight: bolder;
+    color: var(--Brown-800);
+}
+
+.article-two-list li p {
+    padding-left: 18px;
+}
+
+/* .article-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.article-three-title {
+    font-size: 1.875rem;
+    font-family: 'Young Serif', sans-serif;
+}
+
+table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.table-one {
+    margin: 0 auto;
+    width: 85%;
+}
+
+tr:nth-child(1), tr:nth-child(2), tr:nth-child(3) {
+    border-bottom: 1.5px solid var(--Stone-150);
+}
+
+tr:nth-child(1) td {
+    padding-bottom: 10px;
+}
+
+tr:nth-child(2) td, tr:nth-child(3) td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+tr:nth-child(4) td {
+    padding-top: 10px;
+}
+
+td:nth-child(1) {
+    padding-left: 35px;
+}
+
+td:nth-child(2) {
+    padding-right: 25px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: var(--Stone-900); 
+    padding: 20px;
+}
+
+.attribution a { 
+    color: var(--Dusky-Blue); 
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .intro-img {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .space {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (min-width: 480px) {
+    .space {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .intro {
+        padding-bottom: 1rem;
+    }
+
+    .article-three {
+        width: 100%;
+    }
+
+    .article-three p {
+        width: 100%;
+    }
+
+    .table-one {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    table {
+        width: 100%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+
+    tr:nth-child(1) td {
+        padding-bottom: 20px;
+    }
+    
+    tr:nth-child(2) td, tr:nth-child(3) td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    tr:nth-child(4) td {
+        padding-top: 20px;
+    }
+    
+    td:nth-child(1) {
+        padding-left: 70px;
+    }
+    
+    td:nth-child(2) {
+        padding-right: 80px;
+    }
+
+}
